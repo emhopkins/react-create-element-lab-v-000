@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 
 // IMPORTANT!!!! uncomment the lines below to make your tests work
 
-ReactDOM.render(
-  meInReact,
-  document.getElementById('global')
-);
+// const meInReact = ""
 
-export default meInReact
+// ReactDOM.render(
+//   meInReact,
+//   document.getElementById('global')
+// );
 
-const list =
+
+
+const meInReact =
   React.createElement('div', { className: 'me'},
     React.createElement('h1', {}, 'An Awesome Person'),
     React.createElement('p', {}, 'Who is learning React'),
@@ -19,13 +21,14 @@ const list =
         React.createElement('li', {}, 'JavaScript'),
         React.createElement('li', {}, 'React'),
         React.createElement('li', {}, 'Movies'),
-        React.createElement('li', {}, 'Icecream')
+        React.createElement('li', {}, 'Ice cream')
       ]
     )
   );
  
 ReactDOM.render(
-  list,
+  meInReact,
   document.getElementById('global')
 );
 
+export default meInReact
